@@ -15,7 +15,9 @@ import { useEffect, useState } from "react";
 const Boimela = () => {
   const [boimela, Setboimela] = useState('')
 
-  useEffect( ,{})
+  useEffect( () =>{
+    console.log("useeffect is the important thing in react")
+  },{})
   return (
     <div>
       <h4>bangladesh natinal boimel in near shahbagh</h4>
