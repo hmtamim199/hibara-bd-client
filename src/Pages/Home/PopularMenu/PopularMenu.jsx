@@ -1,28 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import MenuItem from '../../Shared/MenuItem/MenuItem';
 
 const PopularMenu = () => {
 
-  const [menu, setMenu] = useState('');
+  const [menu, setMenu] = useState([]);
 
   useEffect( () => {
     fetch('menu.json')
     .then( res => res.json())
     .then( data => {
-      const popularItems = data.filter( item = item.category === 'popular')
+      const popularItems = data.filter( item => item.category === 'popular')
       setMenu(popularItems)})
   },[])
   return (
-    <div>
+   <section>
+
       <SectionTitle
       subeading="from our collection"
-      heading=""
+      heading="popular menu"
       ></SectionTitle>
+     <div>
 
       {
-        
+        menu.map( item => <MenuItem
+        key={item._id}
+        item={item}
+        ></MenuItem>)
       }
+      
     </div>
+   </section>
   );
 };
 
