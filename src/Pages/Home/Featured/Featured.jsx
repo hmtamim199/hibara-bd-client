@@ -5,10 +5,10 @@ import './Featured.css'
 
 const Featured = () => {
   return (
-    <div className="featured-item my-20 pt-8" >
+    <div className="featured-item bg-fixed  my-20 pt-8" >
       <SectionTitle subeading="check it out" heading="From our collection"></SectionTitle>
 
-      <div className="md:flex justify-center items-center pb-16 pt-12 px-36">
+      <div className="md:flex justify-center bg-slate-500 bg-opacity-60 items-center pb-16 pt-12 px-36">
         <div>
           <img src={featuredImg} alt="" />
         </div>
