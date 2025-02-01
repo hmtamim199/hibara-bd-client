@@ -17,6 +17,8 @@ const Featured = () => {
           <p className="uppercase">where can i get it?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis amet quisquam beatae iste labore nobis, necessitatibus facere, sit quaerat molestias expedita cupiditate dolores at, voluptas libero architecto saepe. Amet quis quo ducimus earum vel alias dicta minima corrupti. In nulla eveniet sequi laboriosam impedit magni ipsam dolorum voluptate asperiores.</p>
           <button className="btn btn-outline border-0 ">Order now</button>
+          <button>view all menu </button>
+          <p>assalamu alikum </p>
         </div>
       </div>
     </div>
