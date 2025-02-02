@@ -19,6 +19,8 @@ const Featured = () => {
           <button className="btn btn-outline border-0 ">Order now</button>
           <button>view all menu </button>
           <p>assalamu alikum </p>
+          <h1>abdus suha tamim </h1>
+          <p>assalamu laiku wa rahmatullah </p>
         </div>
       </div>
     </div>
