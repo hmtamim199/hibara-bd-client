@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     
     <div>
-      <Cover img={coverImg}></Cover>
+      <Cover img={coverImg} title="our menu"></Cover>
       <h2>this is the menu </h2>
     </div>
   );
