@@ -1,6 +1,1 @@
-.carousel img {
-  width: 100%; /* Or specify a fixed width, e.g., 300px */
-  height: 300px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image fills the area without distortion */
-  display: block; /* Removes extra spacing for inline images */
-}
+

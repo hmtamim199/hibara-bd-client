@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Navbar = () => {
 
   const navOptions = <>
-  <li> <Link to='/menu'> Collectons</Link> </li>
+  <li> <Link to='/menu'> Menus</Link> </li>
         <li>
           <a>Parent</a>
         </li>
