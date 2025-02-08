@@ -1,4 +1,4 @@
-import React from 'react';
+
 import coverImg from '../../../assets/home/banner.jpg'
 
 const Cover = () => {
