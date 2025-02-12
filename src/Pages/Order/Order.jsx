@@ -3,6 +3,7 @@ import "react-tabs/style/react-tabs.css";
 import useHook from "../../hooks/useHook";
 import { useState } from "react";
 import Cover from "../Menu/Cover/Cover";
+import coverImg from "../../assets/shop/order.jpg.jpg";
 
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -15,7 +16,9 @@ const Order = () => {
   const offered = menu.filter((item) => item.category === "offered");
   return (
     <div>
-      <Cover></Cover>
+      <Cover>
+        <img src={coverImg} alt="" />{" "}
+      </Cover>
 
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <TabList>
