@@ -3,7 +3,8 @@ import "react-tabs/style/react-tabs.css";
 import useHook from "../../hooks/useHook";
 import { useState } from "react";
 import Cover from "../Menu/Cover/Cover";
-import coverImg from "../../assets/shop/order.jpg.jpg";
+import coverImg from "../../assets/shop/order.jpg";
+import FoodCard from "../../components/FoodCard/FoodCard";
 
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -28,7 +29,13 @@ const Order = () => {
           <Tab>Desert</Tab>
           <Tab>Drinks</Tab>
         </TabList>
-        <TabPanel></TabPanel>
+        <TabPanel>
+          <div className="grid grid-cols-3 gap-4">
+            {salad.map((item) => (
+              <FoodCard key={item._id} item={item}></FoodCard>
+            ))}
+          </div>
+        </TabPanel>
         <TabPanel></TabPanel>
         <TabPanel></TabPanel>
         <TabPanel></TabPanel>
