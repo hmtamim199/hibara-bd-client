@@ -5,16 +5,17 @@ import { useState } from "react";
 import Cover from "../Menu/Cover/Cover";
 import coverImg from "../../assets/shop/order.jpg";
 import FoodCard from "../../components/FoodCard/FoodCard";
+import OrderTab from "./OrderTab";
 
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const [menu] = useHook([]);
 
-  const desert = menu.filter((item) => item.category === "dessert");
   const salad = menu.filter((item) => item.category === "salad");
-  const soup = menu.filter((item) => item.category === "soup");
   const pizza = menu.filter((item) => item.category === "pizza");
-  const offered = menu.filter((item) => item.category === "offered");
+  const soup = menu.filter((item) => item.category === "soup");
+  const desert = menu.filter((item) => item.category === "dessert");
+  const drinks = menu.filter((item) => item.category === "drinks");
   return (
     <div>
       <Cover>
@@ -30,16 +31,20 @@ const Order = () => {
           <Tab>Drinks</Tab>
         </TabList>
         <TabPanel>
-          <div className="grid grid-cols-3 gap-4">
-            {salad.map((item) => (
-              <FoodCard key={item._id} item={item}></FoodCard>
-            ))}
-          </div>
+          <OrderTab items={salad}></OrderTab>
         </TabPanel>
-        <TabPanel></TabPanel>
-        <TabPanel></TabPanel>
-        <TabPanel></TabPanel>
-        <TabPanel></TabPanel>
+        <TabPanel>
+          <OrderTab items={pizza}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={soup}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={desert}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={drinks}></OrderTab>
+        </TabPanel>
       </Tabs>
     </div>
   );
