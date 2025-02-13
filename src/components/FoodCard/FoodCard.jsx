@@ -5,6 +5,9 @@ const FoodCard = ({ item }) => {
       <figure className="px-10 pt-10">
         <img src={image} alt="Shoes" className="rounded-xl" />
       </figure>
+      <p className=" absolute right-0 mr-10 mt-12 p-0 bg-slate-900 text-white">
+        ${price}
+      </p>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{name}</h2>
         <p>If a dog chews shoes whose shoes does he choose?</p>
