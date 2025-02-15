@@ -4,7 +4,6 @@ import useHook from "../../hooks/useHook";
 import { useState } from "react";
 import Cover from "../Menu/Cover/Cover";
 import coverImg from "../../assets/shop/order.jpg";
-import FoodCard from "../../components/FoodCard/FoodCard";
 import OrderTab from "./OrderTab";
 
 const Order = () => {
