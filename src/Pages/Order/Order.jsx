@@ -18,7 +18,7 @@ const Order = () => {
   return (
     <div>
       <Cover>
-        <img src={coverImg} alt="" />{" "}
+        <img src={coverImg} />{" "}
       </Cover>
 
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
